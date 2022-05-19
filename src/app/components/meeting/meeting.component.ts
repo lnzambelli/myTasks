@@ -12,10 +12,10 @@ import { MatSnackBar } from '@angular/material/snack-bar';
   template: `
     <mat-card *ngFor="let reunion of arrReuniones" >
       <div class="flex flex-row justify-between">
-        <mat-icon style="color: #3f51b5; font-size: 30px">groups</mat-icon>
+        <mat-icon style="font-size: 30px">groups</mat-icon>
         <h2> {{reunion.titulo}}</h2>
           <mat-chip-list >
-            <mat-chip selected>{{reunion.hora}}</mat-chip>
+            <mat-chip style="background-color: #E6B0AA; color: #212F3C" selected>{{reunion.hora}}</mat-chip>
           </mat-chip-list>
       </div>
       <div class="flex flex-row justify-between">
@@ -27,6 +27,10 @@ import { MatSnackBar } from '@angular/material/snack-bar';
         <p>No tiene reuniones cargadas</p>
     </mat-card> 
   `,
+  styles:[
+    'mat-card {background-color: #212F3C; margin: 8px;}',
+    'p,h2,mat-icon,mat-chip { color:#D4E6F1 }'
+  ],
 })
 export class MeetingComponent implements OnInit {
 

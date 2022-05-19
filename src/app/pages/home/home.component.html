@@ -3,7 +3,7 @@
 <div *ngIf="!cargando;else mostrarDatos" class="flex justify-center">
     <mat-spinner></mat-spinner>
 </div>
-<ng-template #mostrarDatos>
+<ng-template #mostrarDatos style="background-color: #212F3C;">
     <app-meeting></app-meeting>
     <app-task></app-task>
 </ng-template>

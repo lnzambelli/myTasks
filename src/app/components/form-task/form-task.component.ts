@@ -37,11 +37,17 @@ import {MatSnackBar} from '@angular/material/snack-bar';
             </mat-error>
         </mat-form-field>
         <div class="flex justify-center">
-          <button mat-raised-button color="primary" [disabled]="!formGroup.valid || this.confirmado" (click)="guardarTarea()">Guardar</button>
+          <button mat-raised-button [disabled]="!formGroup.valid || this.confirmado" (click)="guardarTarea()">Guardar</button>
         </div>
       </form>
     </mat-card> 
   `,
+  styles:[
+    'mat-card {background-color: #212F3C; border-radius: 0}',
+    'mat-card, input, mat-error,mat-label, {color: #D4E6F1}',
+    'button {background-color: #D4E6F1; color: #212F3C; border: 0.5px solid #D4E6F1 }',
+    '.mat-raised-button[disabled] {background-color: #212F3C; color: #D4E6F1}'  
+  ],
 })
 export class FormTaskComponent implements OnInit{
 

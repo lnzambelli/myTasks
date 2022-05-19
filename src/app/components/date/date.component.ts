@@ -15,9 +15,10 @@ import {MatButtonModule} from '@angular/material/button';
           </mat-form-field> 
     </mat-card>
   `,
-   styles:[
-    'input{  }'
-  ],
+    styles:[
+      'mat-card {background-color: #D4E6F1 ; margin: 8px;}',
+      'mat-label,input { color:#17202A  }',
+    ],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class DateComponent implements OnInit {

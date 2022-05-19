@@ -20,6 +20,10 @@ import { MatSnackBar } from '@angular/material/snack-bar';
         <p>No tiene tareas cargadas</p>
     </mat-card>   
   `,
+  styles:[
+    'mat-card {background-color: #212F3C; margin: 8px;}',
+    'p,h2,mat-icon { color: #D4E6F1  }'
+  ],
 })
 export class TaskComponent implements OnInit{
 
