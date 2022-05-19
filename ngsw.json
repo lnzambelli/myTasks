@@ -1,0 +1,85 @@
+{
+  "configVersion": 1,
+  "timestamp": 1652981565033,
+  "index": "/myTasks/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/myTasks/830.3c9dc3a5324ab0fd34b1.js",
+        "/myTasks/favicon.ico",
+        "/myTasks/index.html",
+        "/myTasks/main.854b7765680c689a094e.js",
+        "/myTasks/manifest.webmanifest",
+        "/myTasks/polyfills.12ddbb91504d77bad598.js",
+        "/myTasks/runtime.743fb6a29654b9ed4ffb.js",
+        "/myTasks/styles.9c76cf8bd49091c536bb.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/myTasks/assets/icons/icon-128x128.png",
+        "/myTasks/assets/icons/icon-144x144.png",
+        "/myTasks/assets/icons/icon-152x152.png",
+        "/myTasks/assets/icons/icon-192x192.png",
+        "/myTasks/assets/icons/icon-384x384.png",
+        "/myTasks/assets/icons/icon-512x512.png",
+        "/myTasks/assets/icons/icon-72x72.png",
+        "/myTasks/assets/icons/icon-96x96.png",
+        "/myTasks/assets/logo.webp"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/myTasks/830.3c9dc3a5324ab0fd34b1.js": "2ce809baccd844145b06fcaafb53fb0dfba66a9d",
+    "/myTasks/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "/myTasks/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "/myTasks/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "/myTasks/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "/myTasks/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/myTasks/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/myTasks/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "/myTasks/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "/myTasks/assets/logo.webp": "22454500e1cd53d3d07a67609e44705c92002c11",
+    "/myTasks/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "/myTasks/index.html": "a99eac0f92af345891b62e570a2c688fb149abd1",
+    "/myTasks/main.854b7765680c689a094e.js": "1351e81086b3a5b350600285fa5c6ee6143e04c0",
+    "/myTasks/manifest.webmanifest": "b157d554ddc8c7e160e390857d06f88559e024ae",
+    "/myTasks/polyfills.12ddbb91504d77bad598.js": "e39f500e57d80ba6ed65c4cc41960caa4e677edd",
+    "/myTasks/runtime.743fb6a29654b9ed4ffb.js": "5fa4bc1b89b190030cf54dd5f40532ce74fee8de",
+    "/myTasks/styles.9c76cf8bd49091c536bb.css": "b70933c2be6bf345c2951986654ddd09355f60c1"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
