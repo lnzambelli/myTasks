@@ -1,0 +1,11 @@
+<app-toolbar></app-toolbar>
+<app-date></app-date>
+<div *ngIf="!cargando;else mostrarDatos" class="flex justify-center">
+    <mat-spinner></mat-spinner>
+</div>
+<ng-template #mostrarDatos>
+    <app-meeting></app-meeting>
+    <app-task></app-task>
+</ng-template>
+<app-footer></app-footer>
+
