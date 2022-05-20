@@ -1,3 +1,4 @@
+import { Alert } from './alert';
 import { CommonModule } from '@angular/common';
 import { Component, NgModule, OnInit } from '@angular/core';
 import {MatCardModule} from '@angular/material/card';
@@ -8,10 +9,11 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 @Component({
   selector: 'app-alert',
   template: `
-        <mat-card *ngFor="let alerta of arrayAlertas" >
-          <div class="flex flex-row ">
+        <mat-card *ngFor="let alerta of arrayAlertas" [ngClass]="{'ocultarCard' : this.mostrar == false }">
+          <div class="flex flex-row justify-between">
             <mat-icon>notifications_active</mat-icon>
             <h3 class="mx-8">{{alerta.titulo}}</h3>
+            <mat-icon (click)="ocultarCard()" >clear</mat-icon>
           </div>
         </mat-card> 
   `,
@@ -19,6 +21,7 @@ import { MatSnackBar } from '@angular/material/snack-bar';
     'mat-card {background-color: #E6B0AA; margin: 0px 8px; padding: 8px 16px 8px 16px; }', 
     'h3,mat-icon { color: #212F3C}',
     'h3 { margin-bottom:0}',
+    '.ocultarCard {display: none; visibility: hidden}'
   ],
 })
 export class AlertComponent implements OnInit {
@@ -26,8 +29,7 @@ export class AlertComponent implements OnInit {
   arrayAlertas: Array<any> = [];
   fecha!: Date;
   fechaActual: any;
-  auxMes: any;
-  auxDia: any;
+  mostrar: boolean = true;
 
   constructor(private taskService: MyTaskService,
               private snackBar: MatSnackBar) {  
@@ -40,6 +42,11 @@ export class AlertComponent implements OnInit {
     }
     this.obtenerFechaSel()
   }
+
+  ocultarCard(){
+      this.mostrar = false
+  }
+
 
   cargarTareas(fecha: any){
     let miFecha = fecha.split('-',3)

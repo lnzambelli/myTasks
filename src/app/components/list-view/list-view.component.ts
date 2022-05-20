@@ -36,6 +36,14 @@ import {MatChipsModule} from '@angular/material/chips';
     <mat-card *ngIf="arrReuniones.length==0" >
         <p>No tiene reuniones cargadas</p>
     </mat-card> 
+
+    <mat-card *ngFor="let alerta of arrayAlertas">
+          <div class="flex flex-row justify-between">
+            <mat-icon>notifications_active</mat-icon>
+            <h2 class="mx-8">{{alerta.titulo}}</h2>
+            <mat-icon (click)="eliminarAlerta(alerta.id)" >clear</mat-icon>
+          </div>
+        </mat-card> 
   `,
   styles:[
     'mat-card {background-color: #212F3C; margin: 8px;}',
@@ -46,6 +54,7 @@ export class ListViewComponent implements OnInit {
   
   arrayTareas: Array<any> = [];
   arrReuniones: Array<any> = [];
+  arrayAlertas: Array<any> = [];
 
   constructor(private snackBar: MatSnackBar) { }
 
@@ -56,6 +65,7 @@ export class ListViewComponent implements OnInit {
   cargarDatos(){
     this.arrayTareas = JSON.parse(localStorage.getItem('misTareas') || "");
     this.arrReuniones = JSON.parse(localStorage.getItem('misReuniones') || "");
+    this.arrayAlertas = JSON.parse(localStorage.getItem('misAlertas') || "");
   }
 
   eliminarTarea(id: string){
@@ -77,9 +87,17 @@ export class ListViewComponent implements OnInit {
     localStorage.setItem('misReuniones', JSON.stringify(this.arrReuniones))
     this.cargarDatos()
   }
- 
-  
 
+  eliminarAlerta(id: string){
+    this.snackBar.open('Eliminando Alerta..', 'Cerrar', {
+      duration: 2000
+    });
+    let auxiliar = JSON.parse(localStorage.getItem('misAlertas') || "");
+    this.arrayAlertas = auxiliar.filter((data: { id: string; }) => data.id != id)
+    localStorage.setItem('misAlertas', JSON.stringify(this.arrayAlertas))
+    this.cargarDatos()
+  }
+ 
 }
 
 @NgModule({
