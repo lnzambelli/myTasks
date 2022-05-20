@@ -7,7 +7,7 @@ import {MatDividerModule} from '@angular/material/divider';
   selector: 'app-footer',
   template: `
     <mat-toolbar >
-       <h6>© 2022 Acerma</h6>
+       <h6>© 2022 lnzambelli</h6>
     </mat-toolbar>
   `,
    styles:[

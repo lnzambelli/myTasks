@@ -80,7 +80,7 @@ export class MeetingComponent implements OnInit {
   }
 
   eliminarReunion(id: string){
-    this.snackBar.open('Eliminando Tareas..', 'Cerrar', {
+    this.snackBar.open('Eliminando Reunion..', 'Cerrar', {
       duration: 2000
     });
     let auxiliar = JSON.parse(localStorage.getItem('misReuniones') || "");
