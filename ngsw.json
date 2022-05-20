@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1652990029260,
+  "timestamp": 1653072936107,
   "index": "/myTasks/index.html",
   "assetGroups": [
     {
@@ -11,13 +11,14 @@
         "ignoreVary": true
       },
       "urls": [
-        "/myTasks/830.00f5f0f85ddac50899ab.js",
+        "/myTasks/188.6b714ad2aecfdf34619c.js",
+        "/myTasks/644.59ff4b366d4f14d96276.js",
         "/myTasks/favicon.ico",
         "/myTasks/index.html",
-        "/myTasks/main.01017c2a86638be8fce1.js",
+        "/myTasks/main.76bd5165d0d7c758ec5e.js",
         "/myTasks/manifest.webmanifest",
         "/myTasks/polyfills.12ddbb91504d77bad598.js",
-        "/myTasks/runtime.868788e04a5a79079b3d.js",
+        "/myTasks/runtime.243d958d52d33005e245.js",
         "/myTasks/styles.6950b9945cf860b40403.css"
       ],
       "patterns": []
@@ -30,37 +31,38 @@
         "ignoreVary": true
       },
       "urls": [
+        "/myTasks/assets/icon-p.ico",
         "/myTasks/assets/icons/icon-128x128.png",
-        "/myTasks/assets/icons/icon-144x144.png",
-        "/myTasks/assets/icons/icon-152x152.png",
-        "/myTasks/assets/icons/icon-192x192.png",
-        "/myTasks/assets/icons/icon-384x384.png",
+        "/myTasks/assets/icons/icon-256x256.png",
+        "/myTasks/assets/icons/icon-32x32.png",
+        "/myTasks/assets/icons/icon-48x48.png",
         "/myTasks/assets/icons/icon-512x512.png",
+        "/myTasks/assets/icons/icon-64x64.png",
         "/myTasks/assets/icons/icon-72x72.png",
-        "/myTasks/assets/icons/icon-96x96.png",
-        "/myTasks/assets/logo.webp"
+        "/myTasks/assets/icons/icon-96x96.png"
       ],
       "patterns": []
     }
   ],
   "dataGroups": [],
   "hashTable": {
-    "/myTasks/830.00f5f0f85ddac50899ab.js": "dd26ec796f63a18fc019830eded3f9e9e43a9524",
-    "/myTasks/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
-    "/myTasks/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
-    "/myTasks/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
-    "/myTasks/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
-    "/myTasks/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
-    "/myTasks/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
-    "/myTasks/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
-    "/myTasks/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
-    "/myTasks/assets/logo.webp": "22454500e1cd53d3d07a67609e44705c92002c11",
-    "/myTasks/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/myTasks/index.html": "b02e04577bcdf534f143ad5d64c870c013234377",
-    "/myTasks/main.01017c2a86638be8fce1.js": "ef678106bd642ca6c9eb3c7c7c5b7d27e3f8642a",
-    "/myTasks/manifest.webmanifest": "b157d554ddc8c7e160e390857d06f88559e024ae",
+    "/myTasks/188.6b714ad2aecfdf34619c.js": "fbc87282f3727a227da79153b94d0d3b8b5c7e9e",
+    "/myTasks/644.59ff4b366d4f14d96276.js": "966951bc8f0f22482fddf3e6e19af13f1a5bd941",
+    "/myTasks/assets/icon-p.ico": "283d5f76ff2872f162f3d26dcebc54652dadc641",
+    "/myTasks/assets/icons/icon-128x128.png": "58ec5011431edfb16c2a9b6b67efe6f131af571c",
+    "/myTasks/assets/icons/icon-256x256.png": "dd11a178fe8af5db704b6397e8097ad6562561f7",
+    "/myTasks/assets/icons/icon-32x32.png": "92c4d2a17d6859e7ab6e491e3f0e751cdd34e85e",
+    "/myTasks/assets/icons/icon-48x48.png": "2fe2a61920a52b3134afda61f02f62968527e82a",
+    "/myTasks/assets/icons/icon-512x512.png": "e3f9ebbdea716cc3a88ab7f34efe6f74babd74d1",
+    "/myTasks/assets/icons/icon-64x64.png": "1058a6b7d5f363eaecfa25f47458a9481f42de40",
+    "/myTasks/assets/icons/icon-72x72.png": "f4072ff68199ee72026961ad40e86595c4ca6677",
+    "/myTasks/assets/icons/icon-96x96.png": "5efb11dc3498c37da8c5cd2e02fd2bc110d6c37d",
+    "/myTasks/favicon.ico": "283d5f76ff2872f162f3d26dcebc54652dadc641",
+    "/myTasks/index.html": "0239ace46fc3ccaf9109e477462a4010425298fc",
+    "/myTasks/main.76bd5165d0d7c758ec5e.js": "966ae174996e61ad6c4973eb19b55e7e0617f76f",
+    "/myTasks/manifest.webmanifest": "c5b553879775a9d2461e96242ba561e2b2520cc8",
     "/myTasks/polyfills.12ddbb91504d77bad598.js": "e39f500e57d80ba6ed65c4cc41960caa4e677edd",
-    "/myTasks/runtime.868788e04a5a79079b3d.js": "0d87b047bd295467e4b859539828baddda2f93a8",
+    "/myTasks/runtime.243d958d52d33005e245.js": "f7246a4d07d72bc72abd495f57c6a02fdd03457c",
     "/myTasks/styles.6950b9945cf860b40403.css": "0925f10c74a09fd0fd19f76dc4a971944140ef21"
   },
   "navigationUrls": [
