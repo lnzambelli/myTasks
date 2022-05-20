@@ -15,6 +15,8 @@ import { environment } from 'src/environments/environment';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { ServiceWorkerModule } from '@angular/service-worker';
+import { ToolbarModule } from 'src/app/components/toolbar/toolbar.component';
+import { FooterModule} from 'src/app/components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +32,8 @@ import { ServiceWorkerModule } from '@angular/service-worker';
     MatSelectModule,
     MatRadioModule,
     MatCardModule,
+    ToolbarModule,
+    FooterModule,
     ReactiveFormsModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
