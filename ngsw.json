@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1653072936107,
+  "timestamp": 1653305905147,
   "index": "/myTasks/index.html",
   "assetGroups": [
     {
@@ -11,14 +11,14 @@
         "ignoreVary": true
       },
       "urls": [
-        "/myTasks/188.6b714ad2aecfdf34619c.js",
+        "/myTasks/188.230bc924f3b83da838b2.js",
         "/myTasks/644.59ff4b366d4f14d96276.js",
         "/myTasks/favicon.ico",
         "/myTasks/index.html",
-        "/myTasks/main.76bd5165d0d7c758ec5e.js",
+        "/myTasks/main.56adb9948d94c984ca81.js",
         "/myTasks/manifest.webmanifest",
         "/myTasks/polyfills.12ddbb91504d77bad598.js",
-        "/myTasks/runtime.243d958d52d33005e245.js",
+        "/myTasks/runtime.74549171e39630cf7576.js",
         "/myTasks/styles.6950b9945cf860b40403.css"
       ],
       "patterns": []
@@ -46,7 +46,7 @@
   ],
   "dataGroups": [],
   "hashTable": {
-    "/myTasks/188.6b714ad2aecfdf34619c.js": "fbc87282f3727a227da79153b94d0d3b8b5c7e9e",
+    "/myTasks/188.230bc924f3b83da838b2.js": "42f9115e5263d34c5a89d000486a0f290a810a84",
     "/myTasks/644.59ff4b366d4f14d96276.js": "966951bc8f0f22482fddf3e6e19af13f1a5bd941",
     "/myTasks/assets/icon-p.ico": "283d5f76ff2872f162f3d26dcebc54652dadc641",
     "/myTasks/assets/icons/icon-128x128.png": "58ec5011431edfb16c2a9b6b67efe6f131af571c",
@@ -58,11 +58,11 @@
     "/myTasks/assets/icons/icon-72x72.png": "f4072ff68199ee72026961ad40e86595c4ca6677",
     "/myTasks/assets/icons/icon-96x96.png": "5efb11dc3498c37da8c5cd2e02fd2bc110d6c37d",
     "/myTasks/favicon.ico": "283d5f76ff2872f162f3d26dcebc54652dadc641",
-    "/myTasks/index.html": "0239ace46fc3ccaf9109e477462a4010425298fc",
-    "/myTasks/main.76bd5165d0d7c758ec5e.js": "966ae174996e61ad6c4973eb19b55e7e0617f76f",
-    "/myTasks/manifest.webmanifest": "c5b553879775a9d2461e96242ba561e2b2520cc8",
+    "/myTasks/index.html": "23789c029a2cbcacc86b439be0d862da8ce6d1a9",
+    "/myTasks/main.56adb9948d94c984ca81.js": "13ea4ab344125967447bfb1cd1361a643e0cc487",
+    "/myTasks/manifest.webmanifest": "a8a8d1b14e93867ecb82b2d4f498392a2c68fa01",
     "/myTasks/polyfills.12ddbb91504d77bad598.js": "e39f500e57d80ba6ed65c4cc41960caa4e677edd",
-    "/myTasks/runtime.243d958d52d33005e245.js": "f7246a4d07d72bc72abd495f57c6a02fdd03457c",
+    "/myTasks/runtime.74549171e39630cf7576.js": "1328be68e8d46d83be2d040c042282610c618fe0",
     "/myTasks/styles.6950b9945cf860b40403.css": "0925f10c74a09fd0fd19f76dc4a971944140ef21"
   },
   "navigationUrls": [
