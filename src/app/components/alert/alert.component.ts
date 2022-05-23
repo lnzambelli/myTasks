@@ -18,7 +18,7 @@ import { MatSnackBar } from '@angular/material/snack-bar';
         </mat-card> 
   `,
   styles:[
-    'mat-card {background-color: #E6B0AA; margin: 0px 8px; padding: 8px 16px 8px 16px; }', 
+    'mat-card {background-color: #E6B0AA; margin: 2px 8px; padding: 8px 16px 8px 16px; }', 
     'h3,mat-icon { color: #212F3C}',
     'h3 { margin-bottom:0}',
     '.ocultarCard {display: none; visibility: hidden}'

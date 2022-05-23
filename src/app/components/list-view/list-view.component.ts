@@ -1,3 +1,6 @@
+import { Alert } from './../alert/alert';
+import { Tareas } from './../task/tareas';
+import { Reunion } from './../meeting/reunion';
 import { CommonModule } from '@angular/common';
 import { Component, NgModule, OnInit } from '@angular/core';
 import {MatCardModule} from '@angular/material/card';
@@ -55,9 +58,9 @@ import {MatChipsModule} from '@angular/material/chips';
 })
 export class ListViewComponent implements OnInit {
   
-  arrayTareas: Array<any> = [];
-  arrReuniones: Array<any> = [];
-  arrayAlertas: Array<any>  =JSON.parse(localStorage.getItem('misAlertas') || "");
+  arrayTareas: Tareas[] = [];
+  arrReuniones: Reunion[] = [];
+  arrayAlertas: Alert[] = [];
 
   constructor(private snackBar: MatSnackBar) { }
 
@@ -66,40 +69,38 @@ export class ListViewComponent implements OnInit {
   }
 
   cargarDatos(){
-    this.arrayTareas = JSON.parse(localStorage.getItem('misTareas') || "");
+   
+    this.arrayTareas = JSON.parse(localStorage.getItem('misTareas') || "") ;
     this.arrReuniones = JSON.parse(localStorage.getItem('misReuniones') || "");
     this.arrayAlertas = JSON.parse(localStorage.getItem('misAlertas') || "");
-    console.log(this.arrayAlertas)
-    console.log(this.arrReuniones)
-    console.log(this.arrayTareas)
   }
 
-  eliminarTarea(id: string){
+  eliminarTarea(id: number){
     this.snackBar.open('Eliminando Tareas..', 'Cerrar', {
       duration: 2000
     });
     let auxiliar = JSON.parse(localStorage.getItem('misTareas') || "");
-    this.arrayTareas = auxiliar.filter((data: { id: string; }) => data.id != id)
+    this.arrayTareas = auxiliar.filter((data: { id: number; }) => data.id != id)
     localStorage.setItem('misTareas', JSON.stringify(this.arrayTareas))
     this.cargarDatos()
   }
 
-  eliminarReunion(id: string){
+  eliminarReunion(id: number){
     this.snackBar.open('Eliminando Reunion..', 'Cerrar', {
       duration: 2000
     });
     let auxiliar = JSON.parse(localStorage.getItem('misReuniones') || "");
-    this.arrReuniones = auxiliar.filter((data: { id: string; }) => data.id != id)
+    this.arrReuniones = auxiliar.filter((data: { id: number; }) => data.id != id)
     localStorage.setItem('misReuniones', JSON.stringify(this.arrReuniones))
     this.cargarDatos()
   }
 
-  eliminarAlerta(id: string){
+  eliminarAlerta(id: number){
     this.snackBar.open('Eliminando Alerta..', 'Cerrar', {
       duration: 2000
     });
     let auxiliar = JSON.parse(localStorage.getItem('misAlertas') || "");
-    this.arrayAlertas = auxiliar.filter((data: { id: string; }) => data.id != id)
+    this.arrayAlertas = auxiliar.filter((data: { id: number; }) => data.id != id)
     localStorage.setItem('misAlertas', JSON.stringify(this.arrayAlertas))
     this.cargarDatos()
   }
