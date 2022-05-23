@@ -20,9 +20,6 @@ import {MatDividerModule} from '@angular/material/divider';
             <button mat-icon-button (click)="mostrarTodo()" matTooltip="Mostrar">
               <mat-icon>list</mat-icon>
             </button>
-            <button mat-icon-button (click)="borrarTodo()" matTooltip="Resetear">
-              <mat-icon>restart_alt</mat-icon>
-            </button>
       </div>
   </mat-toolbar>
   <mat-divider style="border-top-color: #212F3D  "></mat-divider>
@@ -45,16 +42,6 @@ export class ToolbarComponent {
   }
   mostrarTodo(){
     this.router.navigate(['list']);
-  }
-
-  borrarTodo(){
-    const datosEliminar = this.snackBar.open(`No se podran recuperar los datos, esta seguro de continuar?`, "Si, Eliminar", {duration: 5000});
-    datosEliminar.onAction().subscribe(()=>{
-      localStorage.removeItem('misReuniones');
-      localStorage.removeItem('misTareas')
-      this.router.navigate(['home']);
-      window.location.reload()
-    })
   }
 }
 
